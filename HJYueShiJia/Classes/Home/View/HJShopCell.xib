@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HJShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-UG-Gev">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="G3F-XF-bhn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGk-ov-uB0">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 199.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KY-G2-GeQ">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.67843137254901964" green="0.5607843137254902" blue="0.3843137254901961" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eFt-UG-Gev" secondAttribute="trailing" constant="25" id="5yt-ev-2vc"/>
+                <constraint firstItem="TGk-ov-uB0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7fR-SD-QzC"/>
+                <constraint firstItem="TGk-ov-uB0" firstAttribute="top" secondItem="eFt-UG-Gev" secondAttribute="bottom" constant="30" id="GKS-vV-58q"/>
+                <constraint firstItem="eFt-UG-Gev" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="ORP-4T-G3j"/>
+                <constraint firstItem="eFt-UG-Gev" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="Z8f-kR-xxt"/>
+                <constraint firstItem="7KY-G2-GeQ" firstAttribute="top" secondItem="TGk-ov-uB0" secondAttribute="bottom" constant="8" id="ZNF-yx-Cen"/>
+                <constraint firstAttribute="trailing" secondItem="TGk-ov-uB0" secondAttribute="trailing" constant="8" id="bYs-2E-5r5"/>
+                <constraint firstItem="7KY-G2-GeQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="tLc-Zu-I4z"/>
+                <constraint firstAttribute="trailing" secondItem="7KY-G2-GeQ" secondAttribute="trailing" constant="8" id="wen-jj-v1B"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="eFt-UG-Gev" id="LLG-sO-nnB"/>
+                <outlet property="nameLabel" destination="TGk-ov-uB0" id="kS3-3y-2J5"/>
+                <outlet property="priceLabel" destination="7KY-G2-GeQ" id="H1w-sd-Mob"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
